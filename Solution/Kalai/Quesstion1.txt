@@ -1,0 +1,15 @@
+leng=300
+num=0
+num1=int(input("number of photos"))
+
+while num<num1:
+    num+=1
+    wid=int(input("Width"))
+    hei=int(input("height"))
+    if wid>=leng and hei>=leng:
+        if wid==hei:
+            print("Photo Accepted")
+        else:
+            print("Crop the Photo")
+    elif wid<leng or hei<leng:
+        print("Upload Another")

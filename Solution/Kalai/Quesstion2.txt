@@ -1,0 +1,31 @@
+location=[3,0]
+endpoint=0
+
+while endpoint<=6:
+    endpoint+=1
+    direction=input("direction")
+
+    if direction=="l" or direction=="L":
+        location[0]=location[0]+1
+          
+
+    elif direction=="r" or direction=="R":
+        location[0]=location[0]-1          
+    
+
+    elif direction=="u" or direction=="U":
+        location[1]=location[1]+1        
+    
+
+    elif direction=="d" or direction=="D":
+        location[1]=location[1]-1        
+        
+    else:
+        print("Wrong input")
+        continue
+        
+    
+    print("Current position")
+    print(location)
+
+    
